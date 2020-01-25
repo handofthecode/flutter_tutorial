@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class ProductControl extends StatelessWidget {
   final Function addProduct;
-  final Function removeProduct;
+  final Function removeLast;
 
-  ProductControl(this.addProduct, this.removeProduct);
+  ProductControl(this.addProduct, this.removeLast);
 
   Widget build(BuildContext context) {
     return Center(
@@ -14,16 +14,16 @@ class ProductControl extends StatelessWidget {
         RaisedButton(
           color: Theme.of(context).primaryColor,
           onPressed: () {
-            addProduct('Sweets');
+            addProduct({'title': 'Chocolate', 'image': 'assets/food.jpg'});
           },
           child: Text('Add Product'),
         ),
         RaisedButton(
           color: Theme.of(context).primaryColor,
           onPressed: () {
-            removeProduct();
+            removeLast();
           },
-          child: Text('Remove Product'),
+          child: Text('Remove Last Product'),
         )
     ]));
   }
