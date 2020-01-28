@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 class ProductPage extends StatelessWidget {
   final String title;
+  final String description;
+  final double price;
   final String imageUrl;
 
-  ProductPage(this.title, this.imageUrl);
+  ProductPage(this.title, this.description, this.price, this.imageUrl);
 
   _showWarningDialog(BuildContext context) {
     showDialog(
@@ -35,7 +37,6 @@ class ProductPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () {
-        print('back button pressed');
         Navigator.pop(context, false);
         return Future.value(false);
       },
@@ -49,7 +50,12 @@ class ProductPage extends StatelessWidget {
             Image.asset(imageUrl),
             Container(
               padding: EdgeInsets.all(10),
-              child: Text('This page has $title'),
+              child: Text(price.toString()),
+            ),
+            Container(
+              padding: EdgeInsets.all(10),
+              child: Text(description),
+              
             ),
             Container(
               padding: EdgeInsets.all(10),

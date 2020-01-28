@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://dart.dev/#try-dart -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="Content-Language" content="en_US">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Tag Manager -->
+  <script type="text/javascript" async="" src="./Dart programming language _ Dart_files/analytics.js"></script><script type="text/javascript" id="www-widgetapi-script" src="./Dart programming language _ Dart_files/www-widgetapi.js" async=""></script><script src="./Dart programming language _ Dart_files/iframe_api"></script><script async="" src="./Dart programming language _ Dart_files/analytics.js"></script><script async="" src="./Dart programming language _ Dart_files/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5VSZM5J');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="description" content="Dart is a client-optimized language for fast apps on any platform">
+  <title>Dart programming language | Dart</title>
+
+  <!-- Favicon / Touch Icons -->
+  <link rel="icon" sizes="64x64" href="https://dart.dev/assets/shared/dart/icon/64.png">
+  <link href="https://dart.dev/assets/touch-icon-iphone-a46c306c4fbfae0b28d63f512b01d7cb2ccf1e4ca9d7f3aab15ba1170beed4a0.png" rel="apple-touch-icon">
+  <link href="https://dart.dev/assets/touch-icon-ipad-d0181720760b3912858b6d40da1d5586b1e92c7c8656a485ea41005674401e6b.png" rel="apple-touch-icon" sizes="76x76">
+  <link href="https://dart.dev/assets/touch-icon-iphone-retina-3d9821a631425376ac6203dea3c23c1940ab7b5c506a25406662fab76cee2e0b.png" rel="apple-touch-icon" sizes="120x120">
+  <link href="https://dart.dev/assets/touch-icon-ipad-retina-b9715401952522f1daee2b4a4064a1bbfb5ffab78d0a47a7226dc87444d51c32.png" rel="apple-touch-icon" sizes="152x152">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@dart_lang">
+  <meta name="twitter:title" content="Dart programming language">
+  <meta name="twitter:description" content="Dart is a client-optimized language for fast apps on any platform">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dart programming language">
+  <meta property="og:description" content="Dart is a client-optimized language for fast apps on any platform">
+  <meta property="og:url" content="https://dart.dev/">
+  <meta property="og:image" content="https://dart.dev/assets/shared/dart-logo-for-shares.png?2">
+  <link href="./Dart programming language _ Dart_files/css(1)" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" integrity="sha256-Qcs3tmoQmqzxpF1oVQBNKcl8b+faJIbYkju6Oi6kBSk=" crossorigin="anonymous" href="./Dart programming language _ Dart_files/main-41cb37b66a109aacf1a45d6855004d29c97c6fe7da2486d8923bba3a2ea40529.css">
+  <script type="text/javascript" integrity="sha256-MRAjAl+Oas2ASqN3yUDxIX1rJqqknBuvRyl1637/ve0=" crossorigin="anonymous" src="./Dart programming language _ Dart_files/main-311023025f8e6acd804aa377c940f1217d6b26aaa49c1baf472975eb7effbded.js"></script>
+  <script defer="" src="./Dart programming language _ Dart_files/dartpad_picker_main.dart.js"></script>
+  <script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-26406144-4', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+ </head>
+
+  <body class="homepage fixed_nav">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VSZM5J"
+ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <header id="page-header" class="site-header">
+  <nav id="mainnav" class="site-header">
+  <div id="menu-toggle"><i class="icon icon-menu"></i></div>
+  <a href="https://dart.dev/" class="brand" title="Dart">
+    <img src="./Dart programming language _ Dart_files/white-e71fb382ad5229792cc704b3ee7a88f8013e986d6e34f0956d89c453b454d0a5.svg" alt="Dart">
+  </a>
+  <ul class="navbar">
+    <li class="mainnav__get-started">
+      <a href="https://dart.dev/docs" class="nav-link"><span>Docs</span></a>
+    </li>
+    <li>
+      <a href="https://dart.dev/platforms" class="nav-link">Platforms</a>
+    </li>
+    <li>
+      <a href="https://dart.dev/community" class="nav-link">Community</a>
+    </li>
+    <li>
+      <a href="https://dart.dev/#try-dart" class="nav-link">Try Dart</a>
+    </li>
+    <li>
+      <a href="https://dart.dev/get-dart" class="nav-link">Get Dart</a>
+    </li>
+    <li class="searchfield">
+      <form action="https://dart.dev/search" class="site-header__search form-inline" id="cse-search-box">
+        <input type="hidden" name="cx" value="011220921317074318178:_yy-tmb5t_i">
+        <input type="hidden" name="ie" value="UTF-8">
+        <input type="hidden" name="hl" value="en">
+        <input class="site-header__searchfield form-control" type="search" name="q" id="q" autocomplete="off" placeholder="Search" aria-label="Search">
+      </form>
+    </li>
+  </ul>
+</nav>
+
+  
+</header>
+ <div class="banner">
+  <p class="banner__text">
+    
+    Dart 2.7 is now available, with support for
+    <a href="https://dart.dev/guides/language/extension-methods">extension methods</a>
+    and more.
+    <a href="https://medium.com/dartlang/dart-2-7-a3710ec54e97" class="external">Read all about it.</a>
+  </p>
+</div>
+ 
+
+    <div id="sidenav" class="" style="top: 50px; max-height: 659px;">
+  <form action="https://dart.dev/search/" class="site-header__search form-inline">
+    <input class="site-header__searchfield form-control" type="search" name="q" id="q" autocomplete="off" placeholder="Search" aria-label="Search">
+  </form>
+
+  <div class="site-sidebar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="https://dart.dev/platforms" class="nav-link">Platforms</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://dart.dev/community" class="nav-link">Community</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://dartpad.dev/" class="nav-link external">Try Dart</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://dart.dev/get-dart" class="nav-link">Get Dart</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://dart.dev/guides" class="nav-link">Docs</a>
+      </li>
+    </ul>
+
+    <ul class="nav flex-column"><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/#sidenav-1" role="button" aria-expanded="false" aria-controls="sidenav-1">Samples &amp; tutorials</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-1">
+        <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/samples">Language samples</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable" data-toggle="collapse" data-target="#sidenav-1-2" href="https://dart.dev/#sidenav-1-2" role="button" aria-expanded="true" aria-controls="sidenav-1-2">Codelabs
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-1-2">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/codelabs">List of Dart codelabs</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/codelabs/dart-cheatsheet">Language cheatsheet</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/codelabs/iterables">Iterable collections</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/codelabs/async-await">Asynchronous programming</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials">Tutorials</a>
+  </li>
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/#sidenav-2" role="button" aria-expanded="false" aria-controls="sidenav-2">Language</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2">
+        <li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-2-1" href="https://dart.dev/#sidenav-2-1" role="button" aria-expanded="false" aria-controls="sidenav-2-1">Effective Dart
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2-1">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/effective-dart">Overview</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/effective-dart/style">Style</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/effective-dart/documentation">Documentation</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/effective-dart/usage">Usage</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/effective-dart/design">Design</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/extension-methods">Extension methods</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/spec">Specification</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/language-tour">Tour</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/sound-dart">Type system</a>
+  </li>
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/#sidenav-3" role="button" aria-expanded="false" aria-controls="sidenav-3">Core libraries</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-3">
+        <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries">Overview</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries/library-tour">Tour</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-3-3" href="https://dart.dev/#sidenav-3-3" role="button" aria-expanded="false" aria-controls="sidenav-3-3">Articles
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-3-3">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/articles/libraries/dart-io">Intro to dart:io</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/articles/libraries/creating-streams">Creating streams</a>
+  </li></ul>
+  </li>
+
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/#sidenav-4" role="button" aria-expanded="false" aria-controls="sidenav-4">Packages</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-4">
+        <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/packages">How to use packages</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries/useful-libraries">Commonly used packages</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries/create-library-packages">Creating packages</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/publishing">Publishing packages</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-4-5" href="https://dart.dev/#sidenav-4-5" role="button" aria-expanded="false" aria-controls="sidenav-4-5">Package reference
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-4-5">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/dependencies">Dependencies</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/glossary">Glossary</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/package-layout">Package layout conventions</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/environment-variables">Pub environment variables</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/pubspec">Pubspec file</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/troubleshoot">Troubleshooting pub</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/verified-publishers">Verified publishers</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/versioning">Versioning</a>
+  </li></ul>
+  </li>
+
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/#sidenav-5" role="button" aria-expanded="false" aria-controls="sidenav-5">Development</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-5">
+        <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/codelabs/async-await">Futures, async, await</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-5-2" href="https://dart.dev/#sidenav-5-2" role="button" aria-expanded="false" aria-controls="sidenav-5-2">Interoperability
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-5-2">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries/c-interop">C interop</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/web/js-interop">JavaScript interop</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/json">JSON</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/language/streams">Streams</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/mobile">Mobile apps</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-5-6" href="https://dart.dev/#sidenav-5-6" role="button" aria-expanded="false" aria-controls="sidenav-5-6">Command-line &amp; server apps
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-5-6">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/server">Overview</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/server/get-started">Get started</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/server/cmdline">Write command-line apps</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/server/httpserver">Write HTTP clients &amp; servers</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/server/libraries">Libraries and packages</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-5-7" href="https://dart.dev/#sidenav-5-7" role="button" aria-expanded="false" aria-controls="sidenav-5-7">Web apps
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-5-7">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/web">Overview</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/web/get-started">Get started</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/web/fetch-data">Fetch data dynamically</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-5-7-4" href="https://dart.dev/#sidenav-5-7-4" role="button" aria-expanded="false" aria-controls="sidenav-5-7-4">Low-level web programming
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-5-7-4">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/web/low-level-html/connect-dart-html">Connect Dart &amp; HTML</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/web/low-level-html/add-elements">Add elements to the DOM</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/web/low-level-html/remove-elements">Remove DOM elements</a>
+  </li>
+  </ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/web/deployment">Deployment</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/web/libraries">Libraries and packages</a>
+  </li></ul>
+  </li>
+
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/#sidenav-6" role="button" aria-expanded="false" aria-controls="sidenav-6">Tools &amp; techniques</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6">
+        <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools">Overview</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-6-2" href="https://dart.dev/#sidenav-6-2" role="button" aria-expanded="false" aria-controls="sidenav-6-2">Editors &amp; debuggers
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6-2">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/jetbrains-plugin">IntelliJ &amp; Android Studio</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/vs-code">VS Code</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart-devtools">Dart DevTools</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dartpad">DartPad</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-6-3" href="https://dart.dev/#sidenav-6-3" role="button" aria-expanded="false" aria-controls="sidenav-6-3">Command-line tools
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6-3">
+      <li class="nav-item">
+    <a class="nav-link collapsable" data-toggle="collapse" data-target="#sidenav-6-3-1" href="https://dart.dev/#sidenav-6-3-1" role="button" aria-expanded="true" aria-controls="sidenav-6-3-1">Dart SDK
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-6-3-1">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/sdk">Overview</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart-vm">dart (Dart VM)</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart2js">dart2js (prod JS)</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart2native">dart2native</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dartanalyzer">dartanalyzer</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dartaotruntime">dartaotruntime</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dartdevc">dartdevc (dev JS)</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dartdoc">dartdoc</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dartfmt">dartfmt</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/cmd">pub</a>
+  </li>
+  </ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable" data-toggle="collapse" data-target="#sidenav-6-3-2" href="https://dart.dev/#sidenav-6-3-2" role="button" aria-expanded="true" aria-controls="sidenav-6-3-2">Other command-line tools
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-6-3-2">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/build_runner">build_runner</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/webdev">webdev</a>
+  </li>
+  </ul>
+  </li>
+</ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-6-4" href="https://dart.dev/#sidenav-6-4" role="button" aria-expanded="false" aria-controls="sidenav-6-4">Managing source code
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6-4">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/formatting">Formatting code</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries/private-files">What not to commit</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-6-5" href="https://dart.dev/#sidenav-6-5" role="button" aria-expanded="false" aria-controls="sidenav-6-5">Static analysis
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6-5">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/analysis-options">Customizing static analysis</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/sound-problems">Fixing common type problems</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-6-6" href="https://dart.dev/#sidenav-6-6" role="button" aria-expanded="false" aria-controls="sidenav-6-6">Testing &amp; optimization
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6-6">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/testing">Testing</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/web/debugging">Debugging web apps</a>
+  </li></ul>
+  </li>
+
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/#sidenav-7" role="button" aria-expanded="false" aria-controls="sidenav-7">Resources</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-7">
+        <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/resources">Overview</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/resources/books">Books</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/code-of-conduct">Code of conduct</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/faq">FAQ</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-7-5" href="https://dart.dev/#sidenav-7-5" role="button" aria-expanded="false" aria-controls="sidenav-7-5">History
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-7-5">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/dart-2">Migrating to Dart&nbsp;2</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/web/dart-2">Migrating web apps to Dart&nbsp;2</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/obsolete">Obsolete pub features</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/resources/videos">Videos</a>
+  </li>
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link " data-toggle="collapse" href="https://dart.dev/#sidenav-8" role="button" aria-expanded="true" aria-controls="sidenav-8">Related sites</a>
+
+      <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-8">
+        <li class="nav-item">
+    <a class="nav-link external" href="https://api.dart.dev/" target="_blank" rel="noopener">API reference<i class="fas fa-external-link-alt"></i></a>
+  </li><li class="nav-item">
+    <a class="nav-link external" href="https://medium.com/dartlang" target="_blank" rel="noopener">Blog<i class="fas fa-external-link-alt"></i></a>
+  </li><li class="nav-item">
+    <a class="nav-link external" href="https://dartpad.dev/" target="_blank" rel="noopener">DartPad (online editor)<i class="fas fa-external-link-alt"></i></a>
+  </li><li class="nav-item">
+    <a class="nav-link external" href="https://flutter.dev/" target="_blank" rel="noopener">Flutter<i class="fas fa-external-link-alt"></i></a>
+  </li><li class="nav-item">
+    <a class="nav-link external" href="https://pub.dev/" target="_blank" rel="noopener">Package site<i class="fas fa-external-link-alt"></i></a>
+  </li>
+</ul>
+    </li></ul>
+
+  </div>
+</div>
+
+    <main id="page-content">
+      <!-- Hero animation -->
+<div class="d-none d-sm-none d-md-block">
+    <section class="dash-header">
+        <video autoplay="" loop="" muted="" playsinline="">
+            <source src="assets/dash/video/hotreload.webm" type="video/webm;codecs=&quot;vp8, vorbis&quot;">
+            <source src="assets/dash/video/hotreload.mp4" type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+            <img src="./Dart programming language _ Dart_files/paint-your-ui.png">
+        </video>
+    </section>
+</div>
+
+<section class="dash-header d-sm-block d-md-none">
+    <img src="./Dart programming language _ Dart_files/paint-your-ui.png">
+</section>
+
+<!-- Dart tag-line -->
+<section class="dash-header-callout">
+    <div class="callout-title">
+        Dart is a client-optimized language for fast apps on any platform
+    </div>
+    <div class="callout-button">
+        <button class="btn btn-link btn-icon" type="button" data-toggle="modal" data-target="#videoModal" data-video="5F-6n_2XWR8">
+            <i class="material-icons">play_circle_filled</i> Watch video
+        </button>
+    </div>
+
+    <img class="made-by" src="./Dart programming language _ Dart_files/made by google@2x.png">
+</section>
+
+<!-- Dart pillars -->
+<section class="dash-dart-features">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <div class="feature">
+                <div class="feature-icon"><img src="./Dart programming language _ Dart_files/multiplatform performance light op1@2x.png"></div>
+                <div class="feature-title">Optimized<br>for UI</div>
+                <div class="feature-desc">Develop with a programming language
+                specialized around the needs of user interface creation
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="feature">
+                <div class="feature-icon"><img src="./Dart programming language _ Dart_files/client optimised light op1@2x.png"></div>
+                <div class="feature-title">Productive<br>development</div>
+                <div class="feature-desc">Make changes iteratively: use hot
+                reload to see the result instantly in your running app
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+                <div class="feature">
+                    <div class="feature-icon"><img src="./Dart programming language _ Dart_files/productive dev light op1@2x.png"></div>
+                    <div class="feature-title">Fast on all<br>platforms</div>
+                    <div class="feature-desc">Compile to ARM &amp; x64 machine
+                    code for mobile,  desktop, and backend. Or compile to JavaScript
+                    for the web
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dart pillar details, narrow design -->
+<div class="dart-dash-details container-fluid d-sm-block d-md-none" tabindex="-1">
+    <section class="row dash-row">
+        <div class="col-lg-7 col-md-6 col-sm-12 content-image">
+            <img class="gallerySix" src="./Dart programming language _ Dart_files/1-1 async await@2x-80.jpg">
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12 content-info">
+            <div class="content-container">
+                <div class="content-icon">
+                    <img src="./Dart programming language _ Dart_files/multiplatform performance light op1@2x.png">
+                </div>
+                <div class="content-feature">Optimized for UI</div>
+                <div class="content-desc" id="gallerySix">
+                    <ul class="selector">
+                        <li class="highlight" data-banner="assets/dash/2x/1-1 async await@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    Mature and complete <a href="https://dart.dev/codelabs/async-await">async-await</a>
+                                    for user interfaces containing event-driven code, paired with
+                                    <a href="https://dart.dev/guides/language/language-tour#isolates">isolate-based concurrency</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-banner="assets/dash/2x/1-2 language optimized@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    A programming language optimized for building user
+                                    interfaces with features such as the <a href="https://dart.dev/guides/language/language-tour#spread-operator">spread
+                                        operator</a> for
+                                    expanding collections, and <a href="https://dart.dev/guides/language/language-tour#collection-operators">collection
+                                        if</a> for
+                                    customizing UI for each platform
+                                </div>
+                            </div>
+                        </li>
+                        <li data-banner="assets/dash/2x/1-3 familiar syntax@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    A programming language that is easy to learn, with a
+                                    <a href="https://dart.dev/samples">familiar syntax</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <section class="row dash-row">
+        <div class="col-lg-7 col-md-6 col-sm-12 content-image">
+            <img class="galleryFive" src="./Dart programming language _ Dart_files/2-1 hot reload iterative changes@2x-80.jpg">
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12 content-info">
+            <div class="content-container">
+                <div class="content-icon">
+                    <img src="./Dart programming language _ Dart_files/productive dev light op1@2x.png">
+                </div>
+                <div class="content-feature">Productive Development</div>
+                <div class="content-desc" id="galleryFive">
+                    <ul class="selector">
+                        <li class="highlight" data-banner="assets/dash/2x/2-1 hot reload iterative changes@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    Make changes to your source code iteratively, using
+                                    <a href="https://flutter.dev/docs/development/tools/hot-reload" class="no-automatic-external">hot
+                                        reload</a>
+                                    to instantly see the effect in the running app
+                                </div>
+                            </div>
+                        </li>
+                        <li data-banner="assets/dash/2x/2-2 flexible type@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    Write code using a flexible type system with rich
+                                    static analysis and powerful, <a href="https://dart.dev/guides/language/analysis-options">configurable
+                                        tooling</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-banner="assets/dash/2x/2-3 runtime insights@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    Do <a href="https://flutter.github.io/devtools/timeline" class="no-automatic-external">profiling</a>,
+                                    <a href="https://flutter.github.io/devtools/logging" class="no-automatic-external">logging</a>,
+                                    and <a href="https://flutter.github.io/devtools/debugger#getting-started" class="no-automatic-external">debugging</a>
+                                    with your code editor of choice
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <section class="row dash-row">
+        <div class="col-lg-7 col-md-6 col-sm-12 content-image">
+            <img class="galleryOne dash-align-left" src="./Dart programming language _ Dart_files/3-1 - aot compile@2x-80.jpg">
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12 content-info">
+            <div class="content-container">
+                <div class="content-icon">
+                    <img src="./Dart programming language _ Dart_files/client optimised light op1@2x.png">
+                </div>
+                <div class="content-feature">Fast on all platforms</div>
+                <div class="content-desc" id="galleryFour">
+                    <ul class="selector">
+                        <li class="highlight" data-banner="assets/dash/2x/3-1 - aot compile@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    <a href="https://dart.dev/platforms">AOT-compile</a> apps to native
+                                    machine code for instant startup
+                                </div>
+                            </div>
+                        </li>
+                        <li data-banner="assets/dash/2x/3-2 target web@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    Target the web with complete, mature, fast
+                                    <a href="https://dart.dev/platforms#dart-web-javascript">compilers for JavaScript</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-banner="assets/dash/2x/3-3 backend code@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    Run <a href="https://dart.dev/tutorials/server/httpserver">backend code</a>
+                                    supporting your app, written using a single programming language
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Dart pillar details, wide design -->
+<div class="dart-dash-details container-fluid d-none d-sm-none d-md-block">
+    <section class="row dash-row">
+        <div class="col-lg-5 col-md-6 col-sm-12 content-info">
+            <div class="content-container dash-align-right">
+                <div class="content-icon"><img src="./Dart programming language _ Dart_files/multiplatform performance light op1@2x.png"> </div>
+                <div class="content-feature">Optimized for UI</div>
+                <div class="content-desc" id="galleryOne">
+                    <ul class="selector">
+                        <li class="highlight" tabindex="0" data-banner="assets/dash/2x/1-1 async await@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    Mature and complete <a href="https://dart.dev/codelabs/async-await">async-await</a>
+                                    for user interfaces containing event-driven code, paired with
+                                    <a href="https://dart.dev/guides/language/language-tour#isolates">isolate-based concurrency</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li tabindex="0" data-banner="assets/dash/2x/1-2 language optimized@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    A programming language optimized for building user
+                                    interfaces with features such as the <a href="https://dart.dev/guides/language/language-tour#spread-operator">spread
+                                        operator</a> for
+                                    expanding collections, and <a href="https://dart.dev/guides/language/language-tour#collection-operators">collection
+                                        if</a> for
+                                    customizing UI for each platform
+                                </div>
+                            </div>
+                        </li>
+                        <li tabindex="0" data-banner="assets/dash/2x/1-3 familiar syntax@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    A programming language that is easy to learn, with a
+                                    <a href="https://dart.dev/samples">familiar syntax</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-6 col-sm-12 content-image">
+            <img class="galleryOne dash-align-left" src="./Dart programming language _ Dart_files/1-1 async await@2x-80.jpg">
+        </div>
+    </section>
+
+    <section class="row dash-row">
+        <div class="col-lg-7 col-md-6 col-sm-12 content-image">
+            <img class="galleryTwo dash-align-right" src="./Dart programming language _ Dart_files/2-1 hot reload iterative changes@2x-80.jpg">
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12 content-info">
+            <div class="content-container dash-align-left">
+                <div class="content-icon"><img src="./Dart programming language _ Dart_files/productive dev light op1@2x.png"></div>
+                <div class="content-feature">Productive development</div>
+                <div class="content-desc" id="galleryTwo">
+                    <ul class="selector">
+                        <li class="highlight" tabindex="0" data-banner="assets/dash/2x/2-1 hot reload iterative changes@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    Make changes to your source code iteratively, using
+                                    <a href="https://flutter.dev/docs/development/tools/hot-reload" class="no-automatic-external">hot
+                                        reload</a>
+                                    to instantly see the effect in the running app
+                                </div>
+                            </div>
+                        </li>
+                        <li tabindex="0" data-banner="assets/dash/2x/2-2 flexible type@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    Write code using a flexible type system with rich
+                                    static analysis and powerful, <a href="https://dart.dev/guides/language/analysis-options">configurable
+                                        tooling</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li tabindex="0" data-banner="assets/dash/2x/2-3 runtime insights@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    Do <a href="https://flutter.github.io/devtools/timeline" class="no-automatic-external">profiling</a>,
+                                    <a href="https://flutter.github.io/devtools/logging" class="no-automatic-external">logging</a>,
+                                    and <a href="https://flutter.github.io/devtools/debugger#getting-started" class="no-automatic-external">debugging</a>
+                                    with your code editor of choice
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row dash-row">
+        <div class="col-lg-5 col-md-6 col-sm-12 content-info">
+            <div class="content-container dash-align-right">
+                <div class="content-icon"><img src="./Dart programming language _ Dart_files/multiplatform performance light op1@2x.png"></div>
+                <div class="content-feature">Fast on all platforms</div>
+                <div class="content-desc" id="galleryThree">
+                    <ul class="selector">
+                        <li class="highlight" tabindex="0" data-banner="assets/dash/2x/3-1 - aot compile@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    <a href="https://dart.dev/platforms">AOT-compile</a> apps to native
+                                    machine code for instant startup
+                                </div>
+                            </div>
+
+                        </li>
+                        <li tabindex="0" data-banner="assets/dash/2x/3-2 target web@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    Target the web with complete, mature, fast
+                                    <a href="https://dart.dev/platforms#dart-web-javascript">compilers for JavaScript</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li tabindex="0" data-banner="assets/dash/2x/3-3 backend code@2x-80.jpg">
+                            <div>
+                                <div class="bullet-container">
+                                    <div class="animated-bullet"></div>
+                                </div>
+                                <div class="bullet-text">
+                                    Run <a href="https://dart.dev/tutorials/server/httpserver">backend code</a>
+                                    supporting your app, written using a single programming language
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-6 col-sm-12 content-image">
+            <img class="galleryThree dash-align-left" src="./Dart programming language _ Dart_files/3-1 - aot compile@2x-80.jpg">
+        </div>
+    </section>
+    <section class="row">
+        <div class="dash-dartpad">
+            <a name="try-dart" class="frontanchor"></a>
+            <h2>Try Dart in your browser</h2>
+            <select id="dartpad-select"><option value="0">Hello world</option><option value="1">Functions</option><option value="2">Control flow</option><option value="3">Strings</option><option value="4">Collection literals</option><option value="5">Classes</option><option value="6">Compute Pi</option></select>
+            <div id="dartpad-host"><iframe src="./Dart programming language _ Dart_files/embed-dart.html" data-gtm-vis-recent-on-screen-13029053_11="2702" data-gtm-vis-first-on-screen-13029053_11="2702" data-gtm-vis-total-visible-time-13029053_11="100" data-gtm-vis-has-fired-13029053_11="1"></iframe></div>
+            <h3>Want more practice? <a href="https://dart.dev/codelabs">Try a codelab</a>. Or <a href="https://dart.dev/get-dart">download Dart</a>.</h3>
+            
+            <!--?code-excerpt replace="/ *\/\/\s+ignore_for_file:[^\n]+\n//g; /(^|\n) *\/\/\s+ignore:[^\n]+\n/$1/g; /(\n[^\n]+) *\/\/\s+ignore:[^\n]+\n/$1\n/g"?-->
+
+<div id="try-dart-examples" style="display:none">
+
+  <h3 id="hello-world">Hello, World!</h3>
+
+  <!--?code-excerpt "misc/test/samples_test.dart (hello-world)" replace="/void //g"?-->
+  <div id="try-dart-hello-world" class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">main</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">print</span><span class="o">(</span><span class="s">'Hello, World!'</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div>  </div>
+
+  <h3 id="functions">Functions</h3>
+
+  <!--?code-excerpt "misc/bin/try_dart/functions.dart"?-->
+  <div id="try-dart-functions" class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// A function declaration.</span>
+<span class="kt">int</span> <span class="nf">timesTwo</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="c1">// Arrow syntax is shorthand for `{ return expr; }`.</span>
+<span class="kt">int</span> <span class="nf">timesFour</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="n">timesTwo</span><span class="o">(</span><span class="n">timesTwo</span><span class="o">(</span><span class="n">x</span><span class="o">));</span>
+
+<span class="c1">// Functions are objects.</span>
+<span class="kt">int</span> <span class="nf">runTwice</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="n">Function</span> <span class="n">f</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">for</span> <span class="o">(</span><span class="kd">var</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">f</span><span class="o">(</span><span class="n">x</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="k">return</span> <span class="n">x</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="n">main</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">print</span><span class="o">(</span><span class="s">"4 times two is </span><span class="si">${timesTwo(4)}</span><span class="s">"</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="s">"4 times four is </span><span class="si">${timesFour(4)}</span><span class="s">"</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="s">"2 x 2 x 2 is </span><span class="si">${runTwice(2, timesTwo)}</span><span class="s">"</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div>  </div>
+
+  <h3 id="control-flow">Control flow</h3>
+
+  <!--?code-excerpt "misc/bin/try_dart/control_flow.dart"?-->
+  <div id="try-dart-control-flow" class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="nf">isEven</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">)</span> <span class="o">{</span>
+  <span class="c1">// An if-else statement.</span>
+  <span class="k">if</span> <span class="o">(</span><span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+  <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">getEvenNumbers</span><span class="o">(</span><span class="n">Iterable</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers</span><span class="o">)</span> <span class="o">{</span>
+  <span class="kd">var</span> <span class="n">evenNumbers</span> <span class="o">=</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;[];</span>
+
+  <span class="c1">// A for-in loop.</span>
+  <span class="k">for</span> <span class="o">(</span><span class="kd">var</span> <span class="n">i</span> <span class="k">in</span> <span class="n">numbers</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// A single-line if statement.</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">isEven</span><span class="o">(</span><span class="n">i</span><span class="o">))</span> <span class="n">evenNumbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="k">return</span> <span class="n">evenNumbers</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="n">main</span><span class="o">()</span> <span class="o">{</span>
+  <span class="kd">var</span> <span class="n">numbers</span> <span class="o">=</span> <span class="n">List</span><span class="o">.</span><span class="na">generate</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="o">(</span><span class="n">i</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="n">i</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">getEvenNumbers</span><span class="o">(</span><span class="n">numbers</span><span class="o">));</span>
+<span class="o">}</span>
+</code></pre></div>  </div>
+
+  <h3 id="strings">Strings</h3>
+
+  <!--?code-excerpt "misc/bin/try_dart/strings.dart"?-->
+  <div id="try-dart-strings" class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">main</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">print</span><span class="o">(</span><span class="s">'a single quoted string'</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="s">"a double quoted string"</span><span class="o">);</span>
+
+  <span class="c1">// Strings can be combined with the + operator.</span>
+  <span class="n">print</span><span class="o">(</span><span class="s">"cat"</span> <span class="o">+</span> <span class="s">"dog"</span><span class="o">);</span>
+
+  <span class="c1">// Triple quotes define a multi-line string.</span>
+  <span class="n">print</span><span class="o">(</span><span class="s">'''triple quoted strings
+are for multiple lines'''</span><span class="o">);</span>
+
+  <span class="c1">// Dart supports string interpolation.</span>
+  <span class="kd">var</span> <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14</span><span class="o">;</span>
+  <span class="n">print</span><span class="o">(</span><span class="s">'pi is </span><span class="si">$pi</span><span class="s">'</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="s">'tau is </span><span class="si">${2 * pi}</span><span class="s">'</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div>  </div>
+
+  <h3 id="collection-literals">Collection literals</h3>
+
+  <!--?code-excerpt "misc/bin/try_dart/collection_literals.dart"?-->
+  <div id="try-dart-collection-literals" class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// A list literal.</span>
+<span class="kd">var</span> <span class="n">lostNumbers</span> <span class="o">=</span> <span class="o">[</span><span class="mi">4</span><span class="o">,</span> <span class="mi">8</span><span class="o">,</span> <span class="mi">15</span><span class="o">,</span> <span class="mi">16</span><span class="o">,</span> <span class="mi">23</span><span class="o">,</span> <span class="mi">42</span><span class="o">];</span>
+
+<span class="c1">// A map literal.</span>
+<span class="kd">var</span> <span class="n">nobleGases</span> <span class="o">=</span> <span class="o">{</span>
+  <span class="s">'He'</span><span class="o">:</span> <span class="s">'Helium'</span><span class="o">,</span>
+  <span class="s">'Ne'</span><span class="o">:</span> <span class="s">'Neon'</span><span class="o">,</span>
+  <span class="s">'Ar'</span><span class="o">:</span> <span class="s">'Argon'</span><span class="o">,</span>
+<span class="o">};</span>
+
+<span class="c1">// A set literal.</span>
+<span class="kd">var</span> <span class="n">frogs</span> <span class="o">=</span> <span class="o">{</span>
+  <span class="s">'Tree'</span><span class="o">,</span>
+  <span class="s">'Poison dart'</span><span class="o">,</span>
+  <span class="s">'Glass'</span><span class="o">,</span>
+<span class="o">};</span>
+
+<span class="n">main</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">lostNumbers</span><span class="o">.</span><span class="na">last</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">nobleGases</span><span class="o">[</span><span class="s">'Ne'</span><span class="o">]);</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">frogs</span><span class="o">.</span><span class="na">difference</span><span class="o">({</span><span class="s">'Poison dart'</span><span class="o">}));</span>
+<span class="o">}</span>
+</code></pre></div>  </div>
+
+  <h3 id="classes">Classes</h3>
+
+  <!--?code-excerpt "misc/bin/try_dart/classes.dart"?-->
+  <div id="try-dart-classes" class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Abstract classes can't be instantiated.</span>
+<span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Item</span> <span class="o">{</span>
+  <span class="n">use</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="c1">// Classes can implement other classes.</span>
+<span class="kd">class</span> <span class="nc">Chest</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="kd">implements</span> <span class="n">Item</span> <span class="o">{</span>
+  <span class="n">List</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">contents</span><span class="o">;</span>
+
+  <span class="c1">// Constructors can assign arguments to instance variables using `this`.</span>
+  <span class="n">Chest</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">contents</span><span class="o">);</span>
+
+  <span class="n">use</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">print</span><span class="o">(</span><span class="s">"</span><span class="si">$this</span><span class="s"> has </span><span class="si">${contents.length}</span><span class="s"> items."</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Sword</span> <span class="kd">implements</span> <span class="n">Item</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">damage</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
+
+  <span class="n">use</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">print</span><span class="o">(</span><span class="s">"</span><span class="si">$this</span><span class="s"> dealt </span><span class="si">$damage</span><span class="s"> damage."</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="c1">// Classes can extend other classes.</span>
+<span class="kd">class</span> <span class="nc">DiamondSword</span> <span class="kd">extends</span> <span class="n">Sword</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">damage</span> <span class="o">=</span> <span class="mi">50</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="n">main</span><span class="o">()</span> <span class="o">{</span>
+  <span class="c1">// The 'new' keyword is optional.</span>
+  <span class="kd">var</span> <span class="n">chest</span> <span class="o">=</span> <span class="n">Chest</span><span class="o">&lt;</span><span class="n">Item</span><span class="o">&gt;([</span>
+    <span class="n">DiamondSword</span><span class="o">(),</span>
+    <span class="n">Sword</span><span class="o">(),</span>
+  <span class="o">]);</span>
+
+  <span class="n">chest</span><span class="o">.</span><span class="na">use</span><span class="o">();</span>
+
+  <span class="k">for</span> <span class="o">(</span><span class="kd">var</span> <span class="n">item</span> <span class="k">in</span> <span class="n">chest</span><span class="o">.</span><span class="na">contents</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">item</span><span class="o">.</span><span class="na">use</span><span class="o">();</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>  </div>
+
+  <h3 id="compute-">Compute π</h3>
+
+  <!--?code-excerpt "misc/lib/pi_monte_carlo.dart (try-dart)" plaster="none" remove="/output|window/" replace="/numIterations/100/g; /\n *\/\/!.*\n/\n/g; / *\/\/!.*\n/\n/g"?-->
+  <div id="try-dart-compute-pi" class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'dart:math'</span> <span class="kd">show</span> <span class="n">Random</span><span class="o">;</span>
+
+<span class="n">main</span><span class="o">()</span> <span class="n">async</span> <span class="o">{</span>
+  <span class="n">print</span><span class="o">(</span><span class="s">'Compute π using the Monte Carlo method.'</span><span class="o">);</span>
+  <span class="n">await</span> <span class="k">for</span> <span class="o">(</span><span class="kd">var</span> <span class="n">estimate</span> <span class="k">in</span> <span class="n">computePi</span><span class="o">().</span><span class="na">take</span><span class="o">(</span><span class="mi">100</span><span class="o">))</span> <span class="o">{</span>
+    <span class="n">print</span><span class="o">(</span><span class="s">'π ≅ </span><span class="si">$estimate</span><span class="s">'</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="c1">/// Generates a stream of increasingly accurate estimates of π.</span>
+<span class="n">Stream</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">computePi</span><span class="o">({</span><span class="kt">int</span> <span class="n">batch</span> <span class="o">=</span> <span class="mi">100000</span><span class="o">})</span> <span class="n">async</span><span class="o">*</span> <span class="o">{</span>
+  <span class="kd">var</span> <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+  <span class="kd">var</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+  <span class="k">while</span> <span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">var</span> <span class="n">points</span> <span class="o">=</span> <span class="n">generateRandom</span><span class="o">().</span><span class="na">take</span><span class="o">(</span><span class="n">batch</span><span class="o">);</span>
+    <span class="kd">var</span> <span class="n">inside</span> <span class="o">=</span> <span class="n">points</span><span class="o">.</span><span class="na">where</span><span class="o">((</span><span class="n">p</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="n">p</span><span class="o">.</span><span class="na">isInsideUnitCircle</span><span class="o">);</span>
+    <span class="n">total</span> <span class="o">+=</span> <span class="n">batch</span><span class="o">;</span>
+    <span class="n">count</span> <span class="o">+=</span> <span class="n">inside</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+    <span class="kd">var</span> <span class="n">ratio</span> <span class="o">=</span> <span class="n">count</span> <span class="o">/</span> <span class="n">total</span><span class="o">;</span>
+    <span class="c1">// Area of a circle is A = π⋅r², therefore π = A/r².</span>
+    <span class="c1">// So, when given random points with x ∈ &lt;0,1&gt;,</span>
+    <span class="c1">// y ∈ &lt;0,1&gt;, the ratio of those inside a unit circle</span>
+    <span class="c1">// should approach π / 4. Therefore, the value of π</span>
+    <span class="c1">// should be:</span>
+    <span class="n">yield</span> <span class="n">ratio</span> <span class="o">*</span> <span class="mi">4</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="n">Iterable</span><span class="o">&lt;</span><span class="n">Point</span><span class="o">&gt;</span> <span class="n">generateRandom</span><span class="o">([</span><span class="kt">int</span> <span class="n">seed</span><span class="o">])</span> <span class="n">sync</span><span class="o">*</span> <span class="o">{</span>
+  <span class="kd">final</span> <span class="n">random</span> <span class="o">=</span> <span class="n">Random</span><span class="o">(</span><span class="n">seed</span><span class="o">);</span>
+  <span class="k">while</span> <span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">yield</span> <span class="n">Point</span><span class="o">(</span><span class="n">random</span><span class="o">.</span><span class="na">nextDouble</span><span class="o">(),</span> <span class="n">random</span><span class="o">.</span><span class="na">nextDouble</span><span class="o">());</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Point</span> <span class="o">{</span>
+  <span class="kd">final</span> <span class="kt">double</span> <span class="n">x</span><span class="o">,</span> <span class="n">y</span><span class="o">;</span>
+  <span class="kd">const</span> <span class="n">Point</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">x</span><span class="o">,</span> <span class="k">this</span><span class="o">.</span><span class="na">y</span><span class="o">);</span>
+  <span class="kt">bool</span> <span class="kd">get</span> <span class="n">isInsideUnitCircle</span> <span class="o">=&gt;</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">*</span> <span class="n">y</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div>  </div>
+
+  <div>
+</div>
+</div>
+
+        </div>
+    </section>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" data-video-modal="" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="embedded-video-wrapper">
+                    <iframe id="video-player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="./Dart programming language _ Dart_files/5F-6n_2XWR8.html"></iframe>
+<!--                    <iframe id="video-player-iframe" class="embedded-video-wrapper__frame" width="auto" height="auto" src="https://youtube.com/embed/5F-6n_2XWR8?cc_lang_pref=en&cc_load_policy=1&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+    <footer id="page-footer">
+  <div class="container">
+    <div class="content">
+      <div class="text-center" martdown="1">
+        <style>.menu .material-icons { font-size: 14px; }</style><ul class="menu">
+          <li><a href="https://dart.dev/terms">Terms</a></li>
+          <li><a href="https://dart.dev/security">Security</a></li>
+          <li><a href="http://www.google.com/intl/en/policies/privacy/" class="no-automatic-external">Privacy</a></li>
+          <li>Site&nbsp;<a href="http://creativecommons.org/licenses/by/4.0/" class="no-automatic-external">CC&nbsp;BY&nbsp;4.0</a></li>
+          <li>
+            <a href="https://github.com/dart-lang/site-www" title="This site&#39;s source is on GitHub." class="no-automatic-external"><i class="fab fa-github fa-sm"></i></a>
+            &nbsp;
+            <a href="https://github.com/dart-lang/site-www/issues" title="File an issue about this site." class="no-automatic-external"><i class="fas fa-bug fa-sm"></i></a>
+            &nbsp;
+            <a href="https://travis-ci.org/dart-lang/site-www/jobs/642524977" title="Site build #4309 (2020/01/27 10:54 PST)" class="no-automatic-external"><i class="fas fa-wrench fa-sm"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+</body></html>
